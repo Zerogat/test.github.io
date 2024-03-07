@@ -335,7 +335,7 @@
         var estadoMotorElement = document.getElementById('estadoMotor');
         var indicadorApagado = document.getElementById('indicadorApagado');
         var indicadorEncendido = document.getElementById('indicadorEncendido');
-        xhttp.open("POST", "/estado/", true);
+        xhttp.open("POST", "https://zerogat.github.io/test.github.io/estado/", true);
         xhttp.setRequestHeader("Content-Type", "text/plain");  // Establecer el tipo de contenido a texto plano
 
         // Enviar el estado del motor como una cadena
@@ -361,7 +361,7 @@
 
         function mostrarHora(){
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST","/horalive/", true);
+        xhttp.open("POST","https://zerogat.github.io/test.github.io/horalive/", true);
         xhttp.send("/fin");
         xhttp.onload = function () {
             if (xhttp.readyState === xhttp.DONE) {
